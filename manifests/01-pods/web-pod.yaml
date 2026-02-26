@@ -9,5 +9,17 @@ spec:
   containers:
   - name: web
     image: 007259615064.dkr.ecr.us-east-1.amazonaws.com/employees:v1
+    imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 8080
+    env:
+    - name: DBHOST
+      value: "mysql-service.mysql.svc.cluster.local"
+    - name: DBPORT
+      value: "3306"
+    - name: DBUSER
+      value: "admin"
+    - name: DBPWD
+      value: "admin123"
+    - name: DATABASE
+      value: "employees"
