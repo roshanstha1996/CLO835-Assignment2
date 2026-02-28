@@ -44,5 +44,5 @@ Open EC2 Security Group:
 ## Clone Repository
 
 ```bash
-git clone <YOUR_REPO_URL>
-cd clo835-assignment2
+git clone https://github.com/roshanstha1996/CLO835-Assignment2.git
+cd CLO835-Assignment2
