@@ -4,7 +4,7 @@ metadata:
   name: mysql-rs
   namespace: mysql
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: mysql
